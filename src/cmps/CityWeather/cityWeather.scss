@@ -1,0 +1,93 @@
+.cityWeather {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  .topSection {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      justify-content: center;
+
+      > div:nth-of-type(1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        margin-right: 15px;
+      }
+
+      > div:nth-of-type(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        font-size: 1.5rem;
+        font-family: Montserrat-Light;
+      }
+      .weatherImgContainer {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+  .weatherDescription {
+    font-size: 4.2rem;
+    font-family: Montserrat-Light;
+    color: #5a5a5a;
+  }
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    .cardItem {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: #3f51b5;
+      color: #fff;
+      width: 140px;
+      height: 200px;
+      padding: 5px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      span {
+        font-size: 1.2rem;
+        font-family: Montserrat-Light;
+      }
+      .weatherImgContainer {
+        width: 100%;
+        height: 38%;
+        background-size: cover;
+      }
+
+      .day {
+        font-size: 1.4rem;
+        font-family: Montserrat-SemiBold;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .cityWeather > .cards > .cardItem {
+    width: 100%;
+    height: 640px;
+    margin-bottom: 20px;
+  }
+}

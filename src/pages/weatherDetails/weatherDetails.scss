@@ -1,0 +1,38 @@
+.searchInput {
+  border: none;
+  padding: 20px 0;
+}
+
+.weatherDetails {
+  padding-top: 30px;
+  height: calc(100vh - 112px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // background-color: #f9f9f9;
+}
+
+.cityWeather {
+  display: flex;
+}
+
+.darkMode {
+  .cityWeather {
+    background-color: rgb(107, 107, 107);
+  }
+
+  .weatherDescription {
+    color: #fff;
+  }
+
+  .left > div:nth-of-type(2) {
+    color: #fff;
+  }
+}
+.darkMode.weatherDetails {
+  background-color: #000;
+}
+
+.defaultMode.weatherDetails {
+  background-color: #f9f9f9;
+}
